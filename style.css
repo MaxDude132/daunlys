@@ -12,6 +12,7 @@ header {
     justify-content: center;
     text-transform: capitalize;
     font-variant: small-caps;
+    text-align: center;
     background-color: rgb(24, 24, 24);
     width: 500px;
     height: 10vh;
@@ -30,7 +31,6 @@ p.main-p {
 }
 
 div.stats {
-    position: absolute;
     background-color: rgb(39, 39, 39);
     height: 80vh;
     padding: 5%;
@@ -80,7 +80,7 @@ div.bottom-section {
 /* The actual popup (appears on top) */
 .popup .popuptext {
     visibility: hidden;
-    width: 160px;
+    width: 80vw;
     background-color: #555;
     color: #fff;
     text-align: center;
@@ -90,7 +90,7 @@ div.bottom-section {
     z-index: 1;
     bottom: 125%;
     left: 50%;
-    margin-left: -80px;
+    margin-left: -40vw;
 }
 
 /* Popup arrow */
@@ -108,7 +108,7 @@ div.bottom-section {
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
     visibility: visible;
-    animation: slideIn 0,5s;
+    animation: slideIn 1s;
 }
 
 /* Add animation (fade in the popup) */
@@ -119,5 +119,5 @@ div.bottom-section {
 
 @keyframes fadeIn {
     from {opacity: 0;}
-    to {opacity:1 ;}
+    to {opacity: 1;}
 }
