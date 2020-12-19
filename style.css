@@ -23,7 +23,24 @@ body {
     background-color: #363636;
 }
 
-p.main-p {
+button {
+    background-color: rgb(39, 39, 39);
+    border: none;
+    padding: 12px 30px;
+    margin-bottom: 50px;;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition-duration: 0.2s;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: rgb(94, 94, 94);
+}
+
+div.main-text {
     font-size: 1.35em;
     border-width: medium;
     height: 80vh;
@@ -52,6 +69,10 @@ ul {
 [class*="col-"] {
     float: left;
     padding: 15px;
+}
+
+.hidden{
+    visibility: hidden;
 }
 
 .col-1 {width: 8.33%; height: 100%;}
@@ -142,4 +163,12 @@ li {
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+/* The following lines serve to remove the mouse ring*/
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) textarea:focus {
+    outline: none;
 }
