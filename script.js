@@ -1,7 +1,7 @@
 // When the user clicks on <div>, open the popup
 function hidePopups() {
-    var popupInv = document.getElementById("Inventory");
-    var popupChars = document.getElementById("Characters");
+    var popupInv = document.getElementById("inventory");
+    var popupChars = document.getElementById("characters");
     popupInv.classList.toggle("show", false);
     popupChars.classList.toggle("show", false);
 }

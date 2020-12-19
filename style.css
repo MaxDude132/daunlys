@@ -13,7 +13,6 @@ header {
     text-transform: capitalize;
     font-variant: small-caps;
     text-align: center;
-    background-color: rgb(24, 24, 24);
     width: 500px;
     height: 10vh;
 }
@@ -46,6 +45,10 @@ div.bottom-section {
     text-align: center;
 }
 
+ul {
+    list-style-type: none;
+}
+
 [class*="col-"] {
     float: left;
     padding: 15px;
@@ -69,6 +72,25 @@ div.bottom-section {
     clear: both;
     display: table;
 }
+
+li {
+    display: inline;
+    padding-inline: 1vw;
+}
+
+@media only screen and (max-width: 800px) {
+    li {
+        display: block;
+    }
+
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    div.stats {
+        height: 100%;
+    }
+} 
 
 /* Popup container */
 .popup {
